@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Volunteer Form</title>
+</head>
+
+<body>
+    <h1>Volunteer Form</h1>
+
+	<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+        <fieldset>
+            <legend>My Info</legend>
+
+            <!--First Names-->
+            <div>
+                <label for="first_name_field">First Name:</label>
+                <input type="text" id="first_name_field" name="first_name_field" placeholder="John" size="125" required>
+            </div>
+
+            <!--Last Names-->
+            <div>
+                <label for="last_name_field">Last Name:</label>
+                <input type="text" id="last_name_field" name="last_name_field" placeholder="Doe" size="125" required>
+            </div>
+
+            <!--Phone number-->
+            <div>
+                <label for="phone_field">Phone:</label>
+                <input type="tel" id="phone_field" name="phone_field" placeholder="123-456-7890" size="125" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </div>
+
+            <!--Email address-->
+            <div>
+                <label for="email_field">Email:</label>
+                <input type="email" id="email_field" name="email_field" size="125" required>
+            </div>
+            
+            <!--Gender-->
+            <div>
+                <label for="gender_field">Male</label>
+                <input type="radio" id="gender_field" name="gender_field" value="Male" required>
+                <label for="gender_field">Female</label>
+                <input type="radio" id="gender_field" name="gender_field" value="Female" required>
+            </div>
+            
+            <!--Age-->
+            <div>
+                <label for="age_field">Age:</label>
+                <select id="age_field" name="age_field">
+                    <option value="under 18">Under 18</option>
+                    <option value="over 18">Over 18</option>
+                </select>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>My Availability</legend>
+
+            <h3>Days Available:</h3>
+
+            <!--Days-->
+            <div>
+                <label for="available_field[1]">Sunday</label>
+                <input type="checkbox" id="available_field[1]" name="available_field[1]" value="Sunday"><br>
+                <label for="available_field[2]">Monday</label>
+                <input type="checkbox" id="available_field[2]" name="available_field[2]" value="Monday"><br>
+                <label for="available_field[3]">Tuesday</label>
+                <input type="checkbox" id="available_field[3]" name="available_field[3]" value="Tuesday"><br>
+                <label for="available_field[4]">Wednesday</label>
+                <input type="checkbox" id="available_field[4]" name="available_field[4]" value="Wednesday"><br>
+                <label for="available_field[5]">Thursday</label>
+                <input type="checkbox" id="available_field[5]" name="available_field[5]" value="Thursday"><br>
+                <label for="available_field[6]">Friday</label>
+                <input type="checkbox" id="available_field[6]" name="available_field[6]" value="Friday"><br>
+                <label for="available_field[7]">Saturday</label>
+                <input type="checkbox" id="available_field[7]" name="available_field[7]" value="Saturday"><br>
+            </div>
+            
+            <h3>Comments</h3>
+
+            <!--Comments-->
+            <div>
+                <textarea name="comments_field" rows="5" cols="20"></textarea>
+            </div>
+        </fieldset>
+        
+        <!--Submit-->
+        <div>
+            <input type="hidden" id="hidden_field" name="hidden_field" value="De'Anquan Brown">
+            <input type="submit" value="Submit Query">
+        </div>
+    </form>
+</body>
+
+</html>

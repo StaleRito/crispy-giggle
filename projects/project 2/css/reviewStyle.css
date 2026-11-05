@@ -1,0 +1,103 @@
+#page3 body{
+  width: 960px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #424242;
+}
+
+h1 {
+  margin: 50px 0px 0px 5px;
+  color: #ffdada;
+}
+
+h2 {
+  margin: 5px;
+  color: #ffdada;
+}
+
+h3 {
+  margin: 5px;
+  color: #ffdada;
+}
+
+p { 
+  margin: 5px;
+  color: #ffffff;
+}
+
+nav#page-nav ul {
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav#page-nav ul li {
+  float: left;
+  border-left:1px solid #bbbbbb;
+}
+
+nav#page-nav ul li:last-child {
+  border-right: 1px solid #bbbbbb;
+}
+
+nav#page-nav ul li a {
+  display: block;
+  color: #ffffff;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+nav#page-nav ul li a:hover:not(.active) {
+  background-color: #ffdada;
+  color: #000000;
+}
+
+nav#page-nav ul li a.active {
+  background-color: #ff4a4a;
+}
+
+/*Review*/
+/*Style 3-1*/
+#page3 .header{
+  text-align: center;
+  border-bottom: dotted #ffdada;
+}
+
+/*Style 3-2*/
+#page3 h1.shadow{
+  text-shadow: 2px 2px #000000;
+}
+
+/*Style 3-3*/
+#page3 iframe{
+  height: 250px;
+  width: 450px;
+  border: 3px solid #ffdada;
+  padding: 5px;
+}
+
+/*Style 3-4*/
+#page3 p {
+  padding: 5px;
+}
+
+/*Style 3-5*/
+#page3 h2 {
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+/*Style 3-6*/
+#page3 h3 {
+  text-align: center;
+}
